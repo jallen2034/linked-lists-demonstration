@@ -237,7 +237,7 @@ node* insert_node(node *list)
                 bool_var = false;
                 break;
             }
-            // if it doesnt point to anothe rnode after
+            // if it doesnt point to another node after
             else
             {
                 tmp_before->next = yeet;
