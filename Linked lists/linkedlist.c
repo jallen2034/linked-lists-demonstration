@@ -1,3 +1,6 @@
+// a simple command line program, where the user can add, delete and insert nodes into a linked list
+// https://cs50.harvard.edu/x/2020/weeks/5/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <cs50.h>
