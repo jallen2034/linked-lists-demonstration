@@ -34,7 +34,7 @@ int main(void)
         // saftey check to ensure n is not pointing to a NULL value in memory to avoid a seg fault
         if (n != NULL)
         {
-            n->number = 0;  // set the number field of the node our "*n" is currently pointing to: 2
+            n->number = 0;  // set the number field of the node our "*n" is currently pointing to: 0
             n->next = NULL;   // set the next field of the node our "*n" is currently pointing to: NULL
         }
         // point our "*list" pointer to the same node our "*n" pointer is pointing to (at the start of this program, "list" will be pointing to the "head" of the linked list)
