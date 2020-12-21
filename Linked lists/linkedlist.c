@@ -46,7 +46,8 @@ int main(void)
             n = create_node(i);  // use create_node to create a new node + also take the pointer to a node this function returns & assign it back to n
             add_node(list, n);  // connect the "nth" node created() above, to the existing linked list
         }
-
+        
+        // call and use our functions we declare below to actually do fun stuff
         print_list(list);
         list = delete_node(list);
         print_list(list);
