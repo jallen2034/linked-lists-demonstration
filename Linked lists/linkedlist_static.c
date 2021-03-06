@@ -10,8 +10,6 @@ typedef struct node
 node;
 
 void print_list(node *list);
-create_node(value);
-add_node(list, node);
 
 int main(void)
 {
