@@ -10,5 +10,4 @@ Feel free to check out my entire medium article which breaks these scrips down i
 
 https://jacoballen-62830.medium.com/linked-lists-in-c-7671b30a41c9
 
- <a target="_blank" href="https://jacoballen-62830.medium.com/linked-lists-in-c-7671b30a41c9/medium/@jacoballen-62830/0"><img src="https://miro.medium.com/max/700/0*AX5Rc8UKGMoYFXLc/medium/@jacoballen-62830/0" alt="Recent Article 0">
-
+ <a target="_blank" href="  https://github-readme-medium-recent-article.vercel.app/medium/@jacoballen-62830>/0"><img src="https://github-readme-medium-recent-article.vercel.app/medium/@imantumorang/0" alt="Recent Article 0">
