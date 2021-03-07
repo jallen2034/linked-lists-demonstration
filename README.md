@@ -9,3 +9,6 @@ Feel free to check out my entire medium article which breaks these scrips down i
 ## Medium article on the project
 
 https://jacoballen-62830.medium.com/linked-lists-in-c-7671b30a41c9
+
+ <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@jacoballen-62830/0"> 
+
