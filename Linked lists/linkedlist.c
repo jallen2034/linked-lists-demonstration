@@ -26,8 +26,8 @@ int main(void)
         node *n = malloc(sizeof(node));  // malloc() "node 0" in memory + point our *n pointer to it
         if (n != NULL)  // saftey check to ensure n is not pointing to a NULL value in memory to avoid a seg fault
         {
-            n->number = 0;  // set the number field of the node our "*n" is currently pointing to: 2
-            n->next = NULL;   // set the next field of the node our "*n" is currently pointing to: NULL
+            n->number = 0;  // set number field of the node our "*n" is currently pointing to: 2
+            n->next = NULL;   // set next field of the node our "*n" is currently pointing to: NULL
         }
         list = n; // point our "*list" pointer to the same node our "*n" pointer is pointing to (at the start of this program, "list" will be pointing to the "head" of the linked list)
 
