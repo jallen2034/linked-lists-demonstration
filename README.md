@@ -6,4 +6,6 @@ There are two files. One can only statically update nodes in a linked list. The 
 
 Feel free to check out my entire medium article which breaks these scrips down in further detail! 
 
+## Medium article on the project
+
 https://jacoballen-62830.medium.com/linked-lists-in-c-7671b30a41c9
