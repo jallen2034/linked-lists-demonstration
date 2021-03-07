@@ -1,6 +1,6 @@
 ## Project Description
 
-This is just a simple implementation of linked lists in C with a simple command line program.
+A simple implementation of linked lists in C with a simple command line program.
 
 There are two files. One can only statically update nodes in a linked list. The other file can dynamically add and delete nodes in a linked list.
 
