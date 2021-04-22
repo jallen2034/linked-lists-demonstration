@@ -2,14 +2,16 @@
 #include <stdlib.h>
 #include <cs50.h>
 
-typedef struct node  // custom struct for each node in linked list
+// custom struct for each node in linked list
+typedef struct node 
 {
     int number;  // int of node
     struct node *next;  // pointer to next node
 }
 node;
 
-node* create_node(int);  // function prototypes
+// function prototypes
+node* create_node(int); 
 void add_node(node *list, node *n);
 void print_list(node *list);
 node* delete_node(node *list);
@@ -19,7 +21,7 @@ void free_memory(node *list);
 int main(void)
 {
     int input = get_int("Please enter how many nodes you would like to create in the linked list? \n");
-    node *list = NULL;  // list pointer variable, anticipating to be pointed at something of "node" datatype, initalize it to NULL so its not pointing to anything
+    node *list = NULL;  // list pointer variable, anticipating to be pointed at something of "node" datatype, initalize to NULL so its not pointing to anything
 
     if (input != 0)
     {
@@ -47,7 +49,8 @@ int main(void)
     }
 }
 
-node* create_node(int i)  // function to generate a node with the number we got from "i' in main()" "node 0", then "node 1" , then "node 2" etc
+// function to generate a node with the number we got from "i' in main()" "node 0", then "node 1" , then "node 2" etc
+node* create_node(int i)  
 {
     node *n = malloc(sizeof(node)); // new n pointer that will malloc "node i" in memory + point our "*n" pointer to this node
     if (n != NULL)  // saftey check to ensure n is not pointing to a NULL value in our memory
@@ -58,7 +61,8 @@ node* create_node(int i)  // function to generate a node with the number we got 
     return n;
 }
 
-void add_node(node *list, node *n)  // takes in paramaters for the 1. "list" pointer (that is anticipating to point to a node) and the "n" pointer (to point to the "n" node itself)
+// takes in paramaters for the 1. "list" pointer (that is anticipating to point to a node) and the "n" pointer (to point to the "n" node itself)
+void add_node(node *list, node *n)  
 {
     node *tmp = list; // create a temp pointer, which anticipates to be poiinted to something of a "node" datatype, point it to where *tmp is pointing to, drawing a link
     while (tmp->next != NULL) // every time when looping through the linked list, if the current node tmp is  sitting on isn't NULL
@@ -68,7 +72,8 @@ void add_node(node *list, node *n)  // takes in paramaters for the 1. "list" poi
     tmp->next = n; // set tmp->next field in this current node to = n, to point to where *n is pointing to, drawing another link between the temp node and node n after it.
 }
 
-void print_list(node *list) // takes in paramater for the list pointer (that is anticipating to point to a node)
+// takes in paramater for the list pointer (that is anticipating to point to a node)
+void print_list(node *list) 
 {
     printf("Numbers in linked list:\n");
     node *tmp = list; // make a temp pointer that will point to the head of the linked list
@@ -136,7 +141,8 @@ node* delete_node(node *list)
                 tmp_before = tmp_before->next;  // set tmp_before on thisiteration of this loop to == tmp_before->next of the previous loop.
             }
 
-            node *tmp = tmp_before->next;  // create a second tempoary pointer variable to sit on the "nth" node
+            // create a second temp pointer variable to sit on the "nth" node
+            node *tmp = tmp_before->next; 
 
             if (tmp->next != NULL)  // if the node after temp actually points to another node afterwards
             {
@@ -145,7 +151,8 @@ node* delete_node(node *list)
                 bool_var = false;
                 break;
             }
-            else  // https://www.tutorialspoint.com/c_standard_library/c_function_free.htm
+            // https://www.tutorialspoint.com/c_standard_library/c_function_free.htm
+            else  
             {
                 tmp_before->next = NULL;  // set the last node of the linked ist to NULL before we free it(). if we dont do this, after we free() it, tmp_before->next will point to the "0" free() leaves in this block of memory tmp used to occupy
                 free(tmp);
@@ -198,7 +205,7 @@ node* insert_node(node *list)
                 tmp_before = tmp_before->next;  // set tmp_before on thisiteration of this loop to == tmp_before->next of the previous loop.
             }
 
-            node *tmp = tmp_before->next;  // create a second tempoary pointer variable to sit on the "nth" node
+            node *tmp = tmp_before->next;  // create a second temp pointer variable to sit on the "nth" node
 
             if (tmp != NULL)  // if the node after temp actually points to another node afterwards
             {
